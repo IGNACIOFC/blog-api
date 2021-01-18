@@ -19,7 +19,10 @@ html{
 .post{
     display: flex;
     flex-direction: column;
-    margin: 20px 20px;
+    margin: 5px 20px;
+    padding: 20px 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
 }
 .post-title{
     font-weight: 500;
@@ -27,4 +30,49 @@ html{
 
 .post-body{
     font-weight: 300;
+}
+
+/* Modal BG */
+
+.bg-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.modal-content{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.padding{
+    padding: 20px;
+}
+
+.button{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 20px;
+    cursor: pointer;
 }
